@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Module4Challenge</title>
+    <title>Code-Quiz</title>
 </head>
 
 <body>
@@ -24,79 +24,43 @@
     </header>
 
     <main>
-        <form>
-            <section class="start-screen">
-                <!-- Div for the start screen -->
-                <div>
-                    <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">Coding Quiz
-                        Challenge
-                    </h1>
-                </div>
-                <p style="display: center inline-block; text-align: center; width: 400px;">Try to answer the following
-                    code-related questions within the time limit.
-                    Keep in mind that incorrect answers will penalize your score/time by 15 seconds!</p>
-                <!--start quiz html button-->
-                <button class="button-">Start Quiz</button>
-            </section>
 
-            <section class="first-page">
-                <div>
-                    <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">Commonly used data
-                        types
-                        Do NOT include:</h1>
-                </div>
-                <!-- Div for the questions -->
-                <div>
-                    <ul>
-                        <li><button class="button-">1. strings</button></li>
-                        <li><button class="button-">2. booleans</button></li>
-                        <li><button class="button-">3. alerts</button></li>
-                        <li><button class="button-">4. numbers</button></li>
-                    </ul>
-                </div>
-            </section>
+        <section class="start-screen" id="start-box">
+            <!-- Div for the start screen -->
+            <div>
+                <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">Coding Quiz
+                    Challenge
+                </h1>
+            </div>
+            <p style="display: center inline-block; text-align: center; width: 400px;">Try to answer the following
+                code-related questions within the time limit.
+                Keep in mind that incorrect answers will penalize your score/time by 15 seconds!</p>
+            <!--start quiz html button-->
+            <button class="button-start" id="start-button">Start Quiz</button>
+        </section>
 
-            <section class="second-page">
-                <div>
-                    <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">The condition in an
-                        if /
-                        else statement is enclosed within .</h1>
-                </div>
-                <!-- Div for the questions -->
-                <div>
-                    <ul>
-                        <li><button class="button-1">1. quotes</button></li>
-                        <li><button class="button-2">2. curly brackets</button></li>
-                        <li><button class="button-3">3. parenthesis</button></li>
-                        <li><button class="button-4">4. square brackets</button></li>
-                    </ul>
-                </div>
-            </section>
+        <section class="third-page" id="question-box">
+            <div>
+                <h1 class="quiz" id="quesionEl" style="text-align: center; font-weight: bold;font-size: 25px;">Arrays in
+                    JavaScript
+                    can
+                    be used to store .</h1>
+            </div>
+            <!-- Div for the questions -->
+            <div id="choice-box">
+                <button class="button-1" id=choice1El></button>
+                <button class="button-2" id=choice2El></button>
+                <button class="button-3" id=choice3El></button>
+                <button class="button-4" id=choice4El></button>
 
-            <section class="third-page">
-                <div>
-                    <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">Arrays in JavaScript
-                        can
-                        be used to store .</h1>
-                </div>
-                <!-- Div for the questions -->
-                <div>
-                    <ul>
-                        <li><button class="button-1">1. JavaScript</button></li>
-                        <li><button class="button-2">2. booleans</button></li>
-                        <li><button class="button-3">3. alerts</button></li>
-                        <li><button class="button-4">4. numbers</button></li>
-                    </ul>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="fourth-page">
+        <!-- <section class="fourth-page">
                 <div>
                     <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">String values must
                         be enclosed within _ when being assigned to variables</h1>
                 </div>
-                <!-- Div for the questions -->
-                <div>
                     <ul>
                         <li><button class="button-1">1. commas</button></li>
                         <li><button class="button-2">2. curly brackets</button></li>
@@ -104,14 +68,13 @@
                         <li><button class="button-4">4. parenthesis</button></li>
                     </ul>
                 </div>
-            </section>
+            </section> --> -->
 
-            <section class="fifth-page">
+        <!-- <section class="fifth-page">
                 <div>
                     <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">A very useful tool
                         used during development and debugging for printing content to the debugger is:</h1>
                 </div>
-                <!-- Div for the questions -->
                 <div>
                     <ul>
                         <li><button class="button-1">1. JavaScript</button></li>
@@ -120,29 +83,27 @@
                         <li><button class="button-4">4. console.log</button></li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="all-done">
-                <div>
-                    <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">All Done!</h1>
-                </div>
-                <button class="submit-button">Submit</button>
-                <textarea id="textarea" placeholder="Your input"></textarea>
+        <section class="all-done" id="end-box">
+            <div>
+                <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">All Done!</h1>
+            </div>
+            <button class="submit-button">Submit</button>
+            <input type="text" id="initials">
+            <!-- Wrapper div to hold the rest of the content on our screen -->
+        </section>
+        <!-- Div for the end screen -->
+        <section class="end-screen" id="highscore-box">
+            <div>
+                <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">Highscores
+                </h1>
+            </div>
+            <div><button class="back-button">Go Back</button></div>
+            <div><button class="clear-high-scores">Clear Highscores</button></div>
+            <!-- Div to dynamically display feedback to the user -->
+        </section>
 
-                <!-- Wrapper div to hold the rest of the content on our screen -->
-                <div>
-
-                    <!-- Div for the end screen -->
-                    <section class="end-screen">
-                        <div>
-                            <h1 class="quiz" style="text-align: center; font-weight: bold;font-size: 25px;">Highscores
-                            </h1>
-                        </div>
-                        <div><button class="back-button">Go Back</button></div>
-                        <div><button class="clear-high-scores">Clear Highscores</button></div>
-                        <!-- Div to dynamically display feedback to the user -->
-                </div>
-        </form>
     </main>
     <script src="./assets/js/script.js"></script>
 </body>
